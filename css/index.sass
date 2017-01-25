@@ -91,17 +91,11 @@ article
         width: 100%
         margin: 0
 .fade
-    -webkit-animation-name: fade
-    -webkit-animation-duration: 1.5s
-    animation-name: fade
-    animation-duration: 1.5s
+   opacity: 1
+   transition: opacity .25s ease-in-out
+   -moz-transition: opacity .25s ease-in-out
+   -webkit-transition: opacity .25s ease-in-out
 
 
-@-webkit-keyframes fade
-    from {opacity: .4}
-    to {opacity: 1}
-
-
-@keyframes fade
-    from {opacity: .4}
-    to {opacity: 1}
+   .fade:hover
+      opacity: 0.5
