@@ -7,5 +7,5 @@
 header,
 article,
 footer {
-    display: block;
+    display: inline-block;
 }
