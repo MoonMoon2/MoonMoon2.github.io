@@ -2,5 +2,10 @@
 
 }
 .column{
-    
+
+}
+header,
+article,
+footer {
+    display: block;
 }
