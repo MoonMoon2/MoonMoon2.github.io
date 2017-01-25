@@ -2,7 +2,6 @@
 ---
 .bg
     background:
-        image: url(/assets/img/tate-ward.png)
         size: cover
     position: fixed
     height: 100vh
@@ -93,3 +92,18 @@ article
         float: none
         width: 100%
         margin: 0
+.fade
+    -webkit-animation-name: fade
+    -webkit-animation-duration: 1.5s
+    animation-name: fade
+    animation-duration: 1.5s
+
+
+@-webkit-keyframes fade
+    from {opacity: .4}
+    to {opacity: 1}
+
+
+@keyframes fade
+    from {opacity: .4}
+    to {opacity: 1}
