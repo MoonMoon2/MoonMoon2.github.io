@@ -90,6 +90,10 @@ html, body {
     text-decoration: none;
     color: white;
 }
+.container a {
+    text-decoration: none;
+    
+}
 
 .preview {
     width: 75%;
