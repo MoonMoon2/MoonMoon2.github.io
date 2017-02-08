@@ -1,10 +1,11 @@
+/* Header and General Layout */
 html, body {
     height: 100%;
     width: 100%;
     background-color: #333;
     color: white;
 }
-/* Header and General Layout */
+
 .content {
     position: relative;
     padding-top: 150px;
