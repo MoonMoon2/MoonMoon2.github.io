@@ -80,7 +80,7 @@ html, body {
 .parallax {
 
     /* Set a specific height */
-    height: 5px;
+    height: 20px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
