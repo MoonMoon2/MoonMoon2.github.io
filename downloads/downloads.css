@@ -78,6 +78,7 @@ html, body {
     background-color: #38099c;
 }
 /* Page */
-.list {
+#list {
     background-color: #666;
+    color: #FFFFFF;
 }
