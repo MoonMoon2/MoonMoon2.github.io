@@ -80,9 +80,11 @@ html, body {
 #wip {
     background-color: #8b0000;
     width: 100%;
-    height: auto;
+    height: 10px;
+    float: left;
 }
 #wip p {
     color: #FFFFFF;
+    background-color: #8b0000;
 }
 /* Page */
