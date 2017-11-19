@@ -8,7 +8,6 @@ html, body {
 .content {
     position: fixed;
     padding-top: 160px;
-    float: left;
 }
 
 .content p {
@@ -113,6 +112,7 @@ html, body {
 }
 
 .container a {
+    color: #8b0000;
     text-decoration: none;
 }
 
