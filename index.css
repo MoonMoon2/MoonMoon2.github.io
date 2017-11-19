@@ -6,8 +6,9 @@ html, body {
 }
 
 .content {
-    position: relative;
-    padding-top: 150px;
+    position: fixed;
+    padding-top: 160px;
+    float: left;
 }
 
 .content p {
