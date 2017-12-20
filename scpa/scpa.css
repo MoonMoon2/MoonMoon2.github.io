@@ -113,3 +113,9 @@ strong {
     width: 50%;
     height: 50px;
 }
+#pastclout {
+    display: table;
+}
+.pastclout {
+    display: table-cell;
+}

@@ -38,6 +38,8 @@ function cloutify() {
     }
 }
     document.getElementById("ctext").value = ntext
+    window.location.href = "prev.php?ntext=" + ntext;
+
 }
 /*var str = "Visit Microsoft!";
 var str = str.replace("Microsoft", "W3Schools");*/
