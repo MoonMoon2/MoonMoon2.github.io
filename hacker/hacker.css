@@ -7,7 +7,7 @@ html, body {
 /* Header and General Layout */
 .content {
     position: relative;
-    padding-top: 160px;
+    padding-top: 190px;
 }
 
 .content p {
@@ -37,10 +37,10 @@ html, body {
 
 #header {
     z-index: 2;
-    position: absolute;
-    left: -2px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
     width: 100.5%;
-    top: -2px;
     height: 150px;
     line-height: 150px;
     background: #230560;

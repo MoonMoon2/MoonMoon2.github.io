@@ -6,6 +6,7 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111130391-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
+
             function gtag() {
                 dataLayer.push(arguments);
             }
@@ -14,9 +15,10 @@
             gtag('config', 'UA-111130391-1');
         </script>
         <meta charset="utf-8">
-        <title>Tobias Ward - Programming</title>
-        <link rel="stylesheet" href="programming.css">
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <title>Tobias Ward - Home</title>
+        <link rel="stylesheet" href="scpa.css">
+        <script src="scpa.js"></script>
+        <link rel="icon" href="https://png.icons8.com/source-code/ios7/50/000000" type="image/x-icon">
     </head>
 
     <body>
@@ -69,7 +71,16 @@
         </header>
         <div class="content">
             <div class="container">
+                <h1>Cloutifyer</h1>
+                <h3>Ever felt that your text was too similar to <strong>normie speak</strong>?</h3>
+                <h3>Well here's the service for you. Type your uncool <strong>normie speak</strong> into the text box below and click to button to nae nae all those <strong>normies</strong>.</h3>
+                <h3>Type your <strong>normie text</strong>, select your <strong>clout level</strong> and <strong>cloutify</strong>. The answer will not look very clouty, however when pasted other places it does.</h3>
+                <ul id="cloutifyer">
+                    <li><textarea class="cloutifytext" type="text" placeholder="Normie Text" id="ntext" name="ntext"></textarea></li>
 
+                    <li><select id='clevel' default='0'><option value='0'>Light</option><option value='1'>Normal</option><option value='2'>Heavy</option><option value='3'>FULL CLOUT</option></select><button onclick="cloutify()">Cloutify</button></li>
+                </ul>
+                <textarea id="ctext" class="cloutifytext" placeholder="Cloutified text"></textarea>
             </div>
         </div>
 

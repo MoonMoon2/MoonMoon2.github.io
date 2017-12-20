@@ -4,9 +4,9 @@ html, body {
     background-color: #333;
     color: white;
 }
-/* Header and General Layout */
+
 .content {
-    position: relative;
+    position: fixed;
     padding-top: 190px;
 }
 
@@ -96,36 +96,20 @@ html, body {
     vertical-align: middle;
     display: table-cell;
 }
-/* Page */
-
-/* Parallaxes */
-.parallax {
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Page*/
+h3 {
+    font-size: 17px;
+    text-decoration: none;
 }
-/* Set backgrounds for each parallax */
-#p1 {
-    background-image: url("IMG_1849.jpg");
+strong {
+    font-style: italic;
+    font-size: 19px;
 }
-#p2 {
-    background-image: url("IMG_1850.jpg");
+#cloutifyer {
+    text-decoration: none;
+    list-style: none;
 }
-#p3 {
-    background-image: url("IMG_1851.jpg")
-}
-#p4 {
-    background-image: url("IMG_1854.jpg")
-}
-#p5 {
-    background-image: url("IMG_1855.jpg")
-}
-#p6 {
-    background-image: url("IMG_1856.jpg")
+.cloutifytext {
+    width: 50%;
+    height: 50px;
 }
