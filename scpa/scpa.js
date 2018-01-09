@@ -1,3 +1,37 @@
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name ;
+    var ca = document.cookie.split(';');
+    var i;
+    for(i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length); else return null
+    }
+}
+
+function onLoad() {
+    try {
+    var p = getCookie('prevclout')
+    var p = p.split('|')
+    for (i = 0; i < p.length; i++) {
+        var pclout = document.createElement('p')
+        var t = document.createTextNode(t[i]);
+        pclout.appendChild(t);
+        document.getElementById("pastclout").appendChild(pclout)
+    }
+} catch (TypeError){
+
+}
+
+}
+
 function cloutify() {
     var ntext = document.getElementById("ntext").value;
     var clevel = document.getElementById('clevel').value;
@@ -21,25 +55,41 @@ function cloutify() {
         }
     } else if (clevel == '3') {
 
-    var r2 = new Array('ab', 'cl', 'id', 'vs', 'sos', '100', 'atm', 'wc', 'abc', 'ng', 'ok')
-    var g2 = new Array('🆎', '🆑', '🆔', '🆚', '🆘', '💯', '🏧', '🚾', '🔤', '🆖', '🆗')
-    for (i = 0; i < r2.length; i++) {
-        var ntext = ntext.toLowerCase().replace(r2[i], g2[i])
-    }
-    var r = new Array('a', 'b', 'o', 't', 'c', 'u', 'v', '2', 'm', 'n', 'x', 'p', '!', '?', 'i')
-    var g = new Array('🅰️', '🅱️', '🅾️', '✝️ ', '☪️', '⛎', '♈️', '♊️', '♍️', '♑️', '❌', '🅿️', '❗️', '❓', 'ℹ️')
-    for (i = 0; i < ntext.length; i++) {
-        for (n = 0; n < r.length; n++) {
-            if (ntext[i].toLowerCase() == r[n]) {
-                ntext = ntext.substring(0, i) + g[n] + ntext.substring((i + 1));
-            }
+        var r2 = new Array('ab', 'cl', 'id', 'vs', 'sos', '100', 'atm', 'wc', 'abc', 'ng', 'ok')
+        var g2 = new Array('🆎', '🆑', '🆔', '🆚', '🆘', '💯', '🏧', '🚾', '🔤', '🆖', '🆗')
+        for (i = 0; i < r2.length; i++) {
+            var ntext = ntext.toLowerCase().replace(r2[i], g2[i])
         }
+        var r = new Array('a', 'b', 'o', 't', 'c', 'u', 'v', '2', 'm', 'n', 'x', 'p', '!', '?', 'i')
+        var g = new Array('🅰️', '🅱️', '🅾️', '✝️ ', '☪️', '⛎', '♈️', '♊️', '♍️', '♑️', '❌', '🅿️', '❗️', '❓', 'ℹ️')
+        for (i = 0; i < ntext.length; i++) {
+            for (n = 0; n < r.length; n++) {
+                if (ntext[i].toLowerCase() == r[n]) {
+                    ntext = ntext.substring(0, i) + g[n] + ntext.substring((i + 1));
+                }
+            }
 
+        }
     }
-}
     document.getElementById("ctext").value = ntext
-    window.location.href = "prev.php?ntext=" + ntext;
 
+    var t = getCookie('prevclout')
+    console.log('1: ' + t)
+    try {
+    var t = t.split('|')
+} catch (TypeError){
+    var t = new Array()
+}
+    console.log('2: ' + t)
+    t.push(ntext)
+    console.log('3: ' + t)
+    var pclout = document.createElement('p')
+    var c = document.createTextNode(ntext);
+    pclout.appendChild(c);
+    document.getElementById("pastclout").appendChild(pclout)
+    var t = t.join('|')
+    console.log('4: ' + t)
+    setCookie('prevclout', t, '365')
 }
 /*var str = "Visit Microsoft!";
 var str = str.replace("Microsoft", "W3Schools");*/
