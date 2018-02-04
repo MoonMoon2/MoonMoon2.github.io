@@ -91,6 +91,7 @@ function cloutify() {
     pclout.appendChild(c);
     document.getElementById("pastclout").appendChild(pclout)
     var t = t.join('|')
+    var t = t.replace('=', '')
     console.log('4: ' + t)
     setCookie('prevclout', t, '365')
 }
