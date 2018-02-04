@@ -83,6 +83,7 @@ function cloutify() {
     var t = new Array()
 }
     console.log('2: ' + t)
+    console.log(ntext)
     t.push(ntext)
     console.log('3: ' + t)
     var pclout = document.createElement('p')
