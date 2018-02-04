@@ -12,7 +12,7 @@ function getCookie(name) {
     for(i=0;i < ca.length;i++) {
         var c = ca[i];
         while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length); else return null
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
 }
 
@@ -20,9 +20,11 @@ function onLoad() {
     try {
     var p = getCookie('prevclout')
     var p = p.split('|')
+    console.log('-1: '+ p)
     for (i = 0; i < p.length; i++) {
         var pclout = document.createElement('p')
-        var t = document.createTextNode(t[i]);
+        console.log('0: '+ p)
+        var t = document.createTextNode(p[i]);
         pclout.appendChild(t);
         document.getElementById("pastclout").appendChild(pclout)
     }
@@ -91,5 +93,3 @@ function cloutify() {
     console.log('4: ' + t)
     setCookie('prevclout', t, '365')
 }
-/*var str = "Visit Microsoft!";
-var str = str.replace("Microsoft", "W3Schools");*/
