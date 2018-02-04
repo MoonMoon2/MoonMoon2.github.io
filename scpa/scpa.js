@@ -60,8 +60,8 @@ function cloutify() {
         for (i = 0; i < r2.length; i++) {
             var ntext = ntext.toLowerCase().replace(r2[i], g2[i])
         }
-        var r = new Array('a', 'b', 'o', 't', 'c', 'u', 'v', '2', 'm', 'n', 'x', 'p', '!', '?', 'i')
-        var g = new Array('🅰️', '🅱️', '🅾️', '✝️ ', '☪️', '⛎', '♈️', '♊️', '♍️', '♑️', '❌', '🅿️', '❗️', '❓', 'ℹ️')
+        var r = new Array('a', 'b', 'o', 't', 'c', 'u', 'v', '2', 'm', 'n', 'x', 'p', '!', '?', 'i', 'h', 'g')
+        var g = new Array('🅰️', '🅱️', '🅾️', '✝️ ', '☪️', '⛎', '♈️', '♊️', '♍️', '♑️', '❌', '🅿️', '❗️', '❓', 'ℹ️', '🈶', '🈺')
         for (i = 0; i < ntext.length; i++) {
             for (n = 0; n < r.length; n++) {
                 if (ntext[i].toLowerCase() == r[n]) {
