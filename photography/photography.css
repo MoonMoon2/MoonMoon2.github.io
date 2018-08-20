@@ -97,9 +97,7 @@ html, body {
     display: table-cell;
 }
 /* Page */
-.inst {
-    height:100px;
-}
+
 /* Parallaxes */
 .parallax {
 
@@ -117,7 +115,7 @@ html, body {
     background-image: url("IMG_1849.jpg");
 }
 #p2 {
-    background-image: url("IMG_1850.jpg");
+    background-image: url("IMG_1850.JPG");
 }
 #p3 {
     background-image: url("IMG_1851.jpg")
@@ -126,7 +124,7 @@ html, body {
     background-image: url("IMG_1854.jpg")
 }
 #p5 {
-    background-image: url("IMG_1855.jpg")
+    background-image: url("IMG_1855.JPG")
 }
 #p6 {
     background-image: url("IMG_1856.jpg")
