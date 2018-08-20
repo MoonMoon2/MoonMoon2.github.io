@@ -97,7 +97,9 @@ html, body {
     display: table-cell;
 }
 /* Page */
-
+.inst {
+    height:100px;
+}
 /* Parallaxes */
 .parallax {
 
