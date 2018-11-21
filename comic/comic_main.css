@@ -1,0 +1,55 @@
+/* Header and General Layout */
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #CFCFCF;
+    color: black;
+}
+
+.content {
+    position: relative;
+    padding-top: 190px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+.bar {
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    width: 100.5% !important;
+}
+.character {
+    height: 20px;
+    float: left;
+    display:block;
+}
+.alive {
+    width:4.5%;
+    float:left;
+    background-color:#333;
+    border-right:1px solid #000;
+}
+.character .dead {
+    background-color: #333;
+}
+.edge {
+    width: 2.25% !important;
+    color: black;
+}
+#header {
+    z-index: 2;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100.5%;
+    height: 100px;
+    line-height: 50px;
+    background-color:#701518;
+}
+#header h1 {
+    padding-left: 10px;
+}
+/* Page */
