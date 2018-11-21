@@ -2,7 +2,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #CFCFCF;
+    background-color: .CFCFCF;
     color: black;
 }
 
@@ -20,11 +20,11 @@ html, body {
     left: 0px;
     width: 100.5% !important;
 }
-#who {
+.who {
     top: 102px;
     width:100.5%;
     text-align:center;
-    background-color:#000;
+    background-color:.000;
     color:white;
 }
 .character {
@@ -36,19 +36,19 @@ html, body {
 .alive {
     width:4.5%;
     float:left;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-right: 1px solid .000;
+    border-bottom: 1px solid .000;
 }
 .character .dead {
-    background-color: #333;
+    background-color: .333;
 }
 .edge {
     width: 2% !important;
     background-color: black;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
+    border-bottom: 1px solid .000;
+    border-right: 1px solid .000;
 }
-#header {
+.header {
     z-index: 2;
     position: fixed;
     left: 0px;
@@ -57,10 +57,10 @@ html, body {
     height: 100px;
     line-height: 50px;
     display:table;
-    background-color:#701518;
+    background-color:.701518;
     float:left;
 }
-#header h1 {
+.header h1 {
     width:50px;
     padding-left: 10px;
     padding-right:10px;
@@ -68,14 +68,14 @@ html, body {
     border: 1px solid black;
     border-bottom: 0px;
 }
-#header div {
+.header div {
     display:table-cell;
     padding-left:30px;
 }
-#logo {
+.logo {
     height:80px;
     width:80px;
     top:10px;
-    background-color:#FFF;
+    background-color:.FFF;
 }
 /* Page */
