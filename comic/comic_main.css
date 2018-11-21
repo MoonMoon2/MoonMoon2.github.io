@@ -18,10 +18,17 @@ html, body {
     z-index: 2;
     position: fixed;
     left: 0px;
-    top: 100px;
     width: 100.5% !important;
 }
+#who {
+    top: 102px;
+    width:100.5%;
+    text-align:center;
+    background-color:#000;
+    color:white;
+}
 .character {
+    top: 120px;
     height: 20px;
     float: left;
     display:block;
@@ -29,15 +36,17 @@ html, body {
 .alive {
     width:4.5%;
     float:left;
-    background-color:#333;
-    border-right:1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 .character .dead {
     background-color: #333;
 }
 .edge {
-    width: 2.25% !important;
-    color: black;
+    width: 2% !important;
+    background-color: black;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
 }
 #header {
     z-index: 2;
@@ -47,9 +56,27 @@ html, body {
     width: 100.5%;
     height: 100px;
     line-height: 50px;
+    display:table;
     background-color:#701518;
+    float:left;
 }
 #header h1 {
+    width:50px;
     padding-left: 10px;
+    padding-right:10px;
+    display:table-cell;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+#header div {
+    display:table-cell;
+    padding-left:30px;
+}
+#logo {
+    height:80px;
+    width:80px;
+    top:10px;
+    background-color:#FFF;
+
 }
 /* Page */
