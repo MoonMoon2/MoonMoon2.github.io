@@ -2,7 +2,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: .CFCFCF;
+    background-color: #CFCFCF;
     color: black;
 }
 
@@ -24,7 +24,7 @@ html, body {
     top: 102px;
     width:100.5%;
     text-align:center;
-    background-color:.000;
+    background-color:#000;
     color:white;
 }
 .character {
@@ -36,8 +36,8 @@ html, body {
 .alive {
     width:4.5%;
     float:left;
-    border-right: 1px solid .000;
-    border-bottom: 1px solid .000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 .character .dead {
     background-color: .333;
@@ -45,8 +45,8 @@ html, body {
 .edge {
     width: 2% !important;
     background-color: black;
-    border-bottom: 1px solid .000;
-    border-right: 1px solid .000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
 }
 .header {
     z-index: 2;
@@ -57,7 +57,7 @@ html, body {
     height: 100px;
     line-height: 50px;
     display:table;
-    background-color:.701518;
+    background-color:#701518;
     float:left;
 }
 .header h1 {
@@ -76,6 +76,6 @@ html, body {
     height:80px;
     width:80px;
     top:10px;
-    background-color:.FFF;
+    background-color:#FFF;
 }
 /* Page */
