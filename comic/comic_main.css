@@ -20,8 +20,8 @@ html, body {
     left: 0px;
     width: 100.5% !important;
 }
-.who {
-    top: 102px;
+#who {
+    top: 100px;
     width:100.5%;
     text-align:center;
     background-color:#000;
@@ -40,7 +40,7 @@ html, body {
     border-bottom: 1px solid #000;
 }
 .character .dead {
-    background-color: .333;
+    background-color: #333;
 }
 .edge {
     width: 2% !important;
@@ -48,7 +48,7 @@ html, body {
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
 }
-.header {
+#header {
     z-index: 2;
     position: fixed;
     left: 0px;
@@ -60,22 +60,22 @@ html, body {
     background-color:#701518;
     float:left;
 }
-.header h1 {
+#header h1 {
     width:50px;
     padding-left: 10px;
     padding-right:10px;
     display:table-cell;
     border: 1px solid black;
-    border-bottom: 0px;
 }
-.header div {
+#header div {
     display:table-cell;
     padding-left:30px;
 }
-.logo {
+#logo {
     height:80px;
     width:80px;
     top:10px;
     background-color:#FFF;
+
 }
 /* Page */
