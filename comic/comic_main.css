@@ -1,9 +1,18 @@
+/* Fonts */
+@font-face {
+    font-family: 'lansbury';
+    src: url('lansbury/lansbury.woff2') format('woff2'),
+         url('lansbury/lansbury.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Header and General Layout */
 html, body {
     height: 100%;
     width: 100%;
     background-color: #CFCFCF;
     color: black;
+    font-family: 'lansbury';
 }
 
 .content {
@@ -27,8 +36,15 @@ html, body {
     background-color:#000;
     color:white;
 }
+#who2 {
+    top: 136px;
+    width:100.5%;
+    text-align:center;
+    background-color:#000;
+    color:white;
+}
 .character {
-    top: 120px;
+    top: 116px;
     height: 20px;
     float: left;
     display:block;
@@ -43,7 +59,7 @@ html, body {
     background-color: #333;
 }
 .edge {
-    width: 2% !important;
+    width: 1.8% !important;
     background-color: black;
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
@@ -62,10 +78,8 @@ html, body {
 }
 #header h1 {
     width:50px;
-    padding-left: 10px;
     padding-right:10px;
     display:table-cell;
-    border: 1px solid black;
 }
 #header div {
     display:table-cell;
@@ -77,5 +91,9 @@ html, body {
     top:10px;
     background-color:#FFF;
 
+}
+#title {
+    width: 80px;
+    border: 1px solid black;
 }
 /* Page */
