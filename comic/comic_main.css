@@ -51,6 +51,7 @@ html, body {
 }
 .alive {
     width:4.5%;
+    height:20px;
     float:left;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -95,5 +96,10 @@ html, body {
 #title {
     width: 80px;
     border: 1px solid black;
+}
+.ctab {
+    transition: .5s ease-in-out;
+    position: absolute;
+    z-index: 1;
 }
 /* Page */
