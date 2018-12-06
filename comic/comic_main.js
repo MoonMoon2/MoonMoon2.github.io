@@ -1,14 +1,20 @@
-// show tabs for each chracter when you hover over it //
-// 1) Define character tabs //
-// Is there a way to set up a nest of them? ctab.rick as a variable?
+// Declare main variables //
 var ctab = document.getElementsByClassName('ctab')
-var i;
+var cfill = document.getElementsByClassName('ctabf')
+var audio = document.getElementsByClassName("audio");
+
 function onLoad() {
     console.log('onload')
 }
 
 
 function cShow(arg) {
+    var i;
+    for (i = 0; i < 21; i++) {
+        ctab[i].setAttribute("hidden", "true");
+        ctab[i].removeAttribute("style")
+    }
+    cfill[0].setAttribute("hidden", "true")
     switch (arg) {
         case 1:
             ctab[0].removeAttribute("hidden")
@@ -96,7 +102,37 @@ function cShow(arg) {
             break
     }
 }
+// Scrolling tacking
+window.onscroll = function() {
+    myFunction()
+};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").className = "hidden";
+        document.getElementById("sitehead").className = "hidden";
+        document.getElementById("social").className = "hiddensocial";
+        document.getElementById("sitetitle").className = "hidden";
+        document.getElementById("myphead").className = "movedmyp";
+        document.getElementById("wip").className = "movedwip";
+    } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
+        document.getElementById("header").removeAttribute("class");
+        document.getElementById("sitehead").removeAttribute("class");
+        document.getElementById("social").removeAttribute("class");
+        document.getElementById("sitetitle").removeAttribute("class");
+        document.getElementById("myphead").removeAttribute("class");
+        document.getElementById("wip").removeAttribute("class");
+    }
+}
+
+
+
+
+
+
+/* kept incase it's needed
 function chide(arg) {
+    cfill[0].removeAttribute("hidden")
     switch (arg) {
         case 1:
             ctab[0].setAttribute("hidden", "true")
@@ -184,3 +220,4 @@ function chide(arg) {
             break
     }
 }
+*/
