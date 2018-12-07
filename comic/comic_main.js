@@ -102,11 +102,17 @@ function cShow(arg) {
             break
     }
 }
-// Scrolling tacking
+// Scrolling tracking
+// Consider adding some kind of custom scroll progress tracking bar
 window.onscroll = function() {
-    myFunction()
+    scrollFunction()
 };
 
+function scrollFunction() {
+    
+}
+// Example from another page on this site
+/*
 function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header").className = "hidden";
@@ -124,7 +130,7 @@ function myFunction() {
         document.getElementById("wip").removeAttribute("class");
     }
 }
-
+*/
 
 
 
