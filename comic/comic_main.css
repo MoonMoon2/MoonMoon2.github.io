@@ -135,6 +135,9 @@ audio {
     bottom: 5px;
     width:85%;
 }
+iframe {
+    border: 1px solid black;
+}
 .filler {
     height:1000px;
 }
