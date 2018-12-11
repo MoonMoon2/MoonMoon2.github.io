@@ -134,13 +134,13 @@ html, body {
     bottom: 5px;
     right: 5px;
     height: 35%;
-    width: 15%;
+    width: 20%;
     display: table;
 }
 
 .ccolor {
     height: 30px;
-    width: 15%;
+    width: 20%;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -150,7 +150,7 @@ audio {
     position: fixed;
     left: 5px;
     bottom: 5px;
-    width: 85%;
+    width: 80%;
 }
 
 iframe {
