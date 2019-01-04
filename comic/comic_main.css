@@ -1,8 +1,8 @@
 /* Fonts */
 @font-face {
-    font-family: 'lansbury';
-    src: url('lansbury/lansbury.woff2') format('woff2'),
-        url('lansbury/lansbury.woff') format('woff');
+    font-family: 'tatfont';
+    src: url('Tatfont/tatfont.ttf') format('ttf'),
+        url('Tatfont/tatfont.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ html, body {
     width: 100%;
     background-color: #CFCFCF;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'tatfont', Courier, monospace;
 }
 
 .content {
