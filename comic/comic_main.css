@@ -1,8 +1,9 @@
 /* Fonts */
 @font-face {
     font-family: 'tatfont';
-    src: url('Tatfont/tatfont.ttf') format('ttf'),
-        url('Tatfont/tatfont.otf') format('otf');
+    src: url('../comic/Tatfont/TatsHandwriting-Regular.ttf') format('ttf'),
+        url('../comic/Tatfont/TatsHandwriting-Regular.otf') format('otf'),
+        url('../comic/Tatfont/TatsHandwriting-Regular.woff') format('woff'),
     font-weight: normal;
     font-style: normal;
 }
