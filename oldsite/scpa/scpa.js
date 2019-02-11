@@ -37,9 +37,6 @@ function onLoad() {
 function cloutify() {
     var ntext = document.getElementById("ntext").value;
     var clevel = document.getElementById('clevel').value;
-    for (i = 0; i < r0.length; i++) {
-        var ntext = ntext.toLowerCase().replace('izza', 'dead man')
-    }
     if (clevel == '0') {
         var r0 = new Array('ab', 'a', 'b')
         var g0 = new Array('🆎', '🅰️', '🅱️')
