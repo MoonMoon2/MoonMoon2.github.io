@@ -115,6 +115,7 @@ strong {
 }
 #pastclout {
     display: table;
+    height:auto;
 }
 .pastclout {
     display: table-cell;

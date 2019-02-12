@@ -78,11 +78,16 @@
                 <ul id="cloutifyer">
                     <li><textarea class="cloutifytext" type="text" placeholder="Normie Text" id="ntext" name="ntext"></textarea></li>
 
-                    <li><select id='clevel' default='0'><option value='0'>Light</option><option value='1'>Normal</option><option value='2'>Heavy</option><option value='3'>FULL CLOUT</option></select><button onclick="cloutify()">Cloutify</button></li>
+                    <li><select id='clevel' default='0'>
+                            <option value='0'>Light</option>
+                            <option value='1'>Normal</option>
+                            <option value='2'>Heavy</option>
+                            <option value='3'>FULL CLOUT</option>
+                        </select><button onclick="cloutify()">Cloutify</button></li>
                 </ul>
                 <textarea id="ctext" class="cloutifytext" placeholder="Cloutified text"></textarea>
                 <h3>Previous <strong>clout</strong>:</h3>
-                <iframe style='width:100%;height:auto;'><div id="pastclout"></div></iframe>
+                <div id="pastclout"></div>
             </div>
         </div>
 
