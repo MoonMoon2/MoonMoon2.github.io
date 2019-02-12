@@ -1,0 +1,34 @@
+/* Custom Font */
+@font-face {
+    font-family: 'tatfont';
+    src: url("comic/tatfont/tatfont.woff") format('woff'), url("comic/tatfont/tatfont.ttf") format('ttf'), url("comic/tatfont/tatfont.otf") format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* General Page */
+body,
+html {
+    background-image: radial-gradient(farthest-corner at 10px 5px, #4d4d4d 0%, #00000a 100%);
+    height: 100%;
+    width: 100%;
+    font-family: 'tatfont', Courier, monospace;
+}
+/* Header bar */
+header {
+    width: 100%;
+
+    #name {
+        left: 0px;
+        border-right: 1px solid white;
+    }
+    #mainnav {
+        right:0px;
+        margin-left: 100%;
+        padding-left: 20px;
+        padding-right: 10px;
+        transition: margin-left 1s ease-in-out .5s;
+        &:hover {
+            margin-left: 0%;
+        }
+    }
+}
