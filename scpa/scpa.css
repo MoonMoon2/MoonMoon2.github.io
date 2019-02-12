@@ -6,8 +6,8 @@ html, body {
 }
 
 .content {
-    position: fixed;
     padding-top: 190px;
+    height:auto;
 }
 
 .content p {
@@ -115,7 +115,7 @@ strong {
 }
 #pastclout {
     display: table;
-    height:200%;
+    height:2000px;
 }
 .pastclout {
     display: table-cell;
