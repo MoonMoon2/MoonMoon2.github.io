@@ -1,0 +1,24 @@
+title: Tate's Site
+email: tate@tatesworld.com
+description:
+baseurl: "" # Don't change this, this refers to the site's relative path, like /blog.
+url: "https://moonmoon2.github.io"
+github_username:  moonmoon2
+
+# Build settings
+#exclude: [vendor]
+sass:
+    style: compressed
+exclude:
+    - README.md
+    - LICENSE.md
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - package.json
+    - CODE_OF_CONDUCT.md
+    - .gitignore
+include:
+    - _pages
+plugins:
+    - octopress-autoprefixer

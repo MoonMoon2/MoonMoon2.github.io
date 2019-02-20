@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /scpa
+title: SCPA
+stylesheets:
+- scpa
+scripts:
+- scpa
+---
+<div class='content'>
+        <h1>Cloutifyer</h1>
+        <h3>What up? You too busy to bother with epic, Despacito-levels of speech? Well look no further. </h3>
+        <h3>Type your uncool <strong>normie speak</strong> into the text box below and beat that button, like your dad beat you, to nae nae all those <strong>normies</strong>.</h3>
+        <h3>Type your <strong>casual, non-gamer text</strong>, select your <strong>epic clout level</strong> and <strong>cloutify</strong>.</h3>
+
+        <ul id="cloutifyer">
+            <li><textarea class="cloutifytext" type="text" placeholder="Normie Text" id="ntext" name="ntext"></textarea></li>
+
+            <li><select id='clevel' default='0'>
+                    <option value='0'>Light</option>
+                    <option value='1'>Normal</option>
+                    <option value='2'>Heavy</option>
+                    <option value='3'>FULL CLOUT</option>
+                </select><button onclick="cloutify()">Cloutify</button></li>
+            <li><textarea id="ctext" class="cloutifytext" placeholder="Cloutified text"></textarea></li>
+        </ul>
+
+        <h3>Previous <strong>clout</strong>:</h3>
+        <div id="pastclout"></div>
+</div>
