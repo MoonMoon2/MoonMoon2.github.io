@@ -41,32 +41,32 @@
         <ol>
             <li class='menu-item'><a href='/'>Home</a></li>
             <li class='menu-item'>
-                <a href='#0'>Hobbies</a>
+                <a href='#'>Hobbies</a>
                 <ol class='sub-menu'>
-                    <li class='menu-item'><a href='/#'>Music</a></li>
-                    <li class='menu-item'><a href='/#'>Coding</a></li>
+                    <li class='menu-item'><a href='#'>Music</a></li>
+                    <li class='menu-item'><a href='#'>Coding</a></li>
                 </ol>
             </li>
             <li class='menu-item'>
                 <a href='#0' title="It would be under hobbies, but it is more than a hobby at this point">Water Polo</a>
                 <ol class='sub-menu'>
-                    <li class='menu-item'><a href='/#'>Schedule</a></li>
-                    <li class='menu-item'><a href='/#'>Recruitment</a></li>
-                    <li class='menu-item'><a href='/#'>Video</a></li>
+                    <li class='menu-item'><a href='#'>Schedule</a></li>
+                    <li class='menu-item'><a href='#'>Recruitment</a></li>
+                    <li class='menu-item'><a href='#'>Video</a></li>
                 </ol>
             </li>
             <li class='menu-item'>
-                <a href='/projects'>Fun Projects</a>
+                <a href='#'>Fun Projects</a>
                 <ol class='sub-menu'>
                     <li class='menu-item'><a href='/scpa'>SCPA</a></li>
                     <li class='menu-item'><a href='/comic'>Comic</a></li>
                 </ol>
             </li>
-            <li class='menu-item'><a href='/#'>Contact</a></li>
+            <li class='menu-item'><a href='/contact'>Contact</a></li>
             <li class='menu-item'>
-                <a href='/projects'>Other Stuff</a>
+                <a href='#'>Other Stuff</a>
                 <ol class='sub-menu'>
-                    <li class='menu-item'><a href='/#'>Academics</a></li>
+                    <li class='menu-item'><a href='/academics'>Academics</a></li>
                     <li class='menu-item'><a href='/baddownloads'>Bad Files</a></li>
                 </ol>
             </li>
@@ -119,6 +119,9 @@
                 <td>Navbar designed by</td>
                 <td><a href='https://codepen.io/jenning/'><img src="https://s.cdpn.io/profiles/user/686667/512.jpg?1545273748" style='width:50px;' /></a></td>
             </tr>
+            <tr>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                </tr>
         </table>
     </div>
 </footer>

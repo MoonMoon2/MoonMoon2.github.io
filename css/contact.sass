@@ -1,0 +1,62 @@
+---
+
+# no touchy, this is why the sass works
+
+---
+
+$black: #000000
+$mid: #240090
+$low: #190061
+$light: #3500D3
+$accent: #FFFF00
+$white: #FFF
+
+.content
+  a
+    text-decoration: none
+    color: $white
+
+  table
+    text-align: left
+    vertical-align: middle
+    background: $black
+    border: 0.5px solid $white
+
+    .bigt
+      width: 100%
+      td
+        transition: all 0.5s ease-in-out
+        padding: 20px
+        display: inline-table
+        border: 0px solid $white
+
+        &:hover
+          background: $mid
+          transform: scale(1.05)
+
+          & > *
+            background: $mid
+            transform: scale(1.05)
+
+  .socialsub
+    border: 0px
+    padding: 2px
+    border: 0px solid $white
+
+    &:hover
+      background: $mid
+
+    tr
+      padding: 2px
+      transition: all 0.5s ease-in-out
+
+      td
+        padding: 2px
+        cursor: grab
+
+        &:hover
+          background: $light
+          transform: scale(1.2)
+
+          & > *
+            background: $light
