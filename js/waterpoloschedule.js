@@ -24,9 +24,8 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-var myIframe = document.getElementsByClassName('iframe');
-myIframe[0].onload = function() {
+var iframe = document.getElementsByClassName('iframe');
+iframe[0].onload = function() {
     for (i = 0; i < myIframe.length; i++) {
-
     myIframe[i].contentWindow.scrollTo(300,0);}
 }
