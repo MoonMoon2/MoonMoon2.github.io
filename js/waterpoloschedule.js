@@ -1,4 +1,4 @@
-window.onload = openTab('event', 'mens')
+document.onload = openTab('event', 'mens')
 
 
 function openTab(evt, tabName) {
