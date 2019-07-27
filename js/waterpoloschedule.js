@@ -6,7 +6,7 @@ function openTab(evt, tabName) {
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
+  for (i = 1; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
