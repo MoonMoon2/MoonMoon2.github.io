@@ -9,6 +9,7 @@ var ascii_range = (function() {
 })();
 console.log(String.fromCharCode(126))
 ascii_range('A','~').join();
+
 console.log(ascii_range)
 
 function password(text,key) {
