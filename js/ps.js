@@ -12,6 +12,15 @@ ascii_range('A','~').join();
 
 console.log(ascii_range)
 
-function password(text,key) {
+function password() {
+    var text = document.getElementById('text')
+    var text = text.value.split('')
+    console.log('text')
+    for (n=0; n<text.length; n++) {
 
+    }
+    for (i=0; i<text.length; i++) {
+
+    }
+    console.log('done.')
 }
