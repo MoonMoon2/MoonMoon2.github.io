@@ -5,46 +5,47 @@
 ---
 
 $black: #000000
-$mid: #240090
-$low: #190061
-$light: #3500D3
-$accent: #FFFF00
-$white: #FFF
+$accent1: #FF7F50
+$accent2: #B57EDC
+$white: #FFFFFF
+$gray: #AAAAAA
+$lgray: #EDEDED
 
 .content
   a
     text-decoration: none
-    color: $white
+    color: $black
 
   table
-    text-align: left
+    text-align: center
     vertical-align: middle
-    background: $black
-    border: 0.5px solid $white
+    background: $white
+    border: 0.5px solid $black
 
     .bigt
       width: 100%
+
       td
         transition: all 0.5s ease-in-out
         padding: 20px
         display: inline-table
-        border: 0px solid $white
+        border: 0px solid $black
 
         &:hover
-          background: $mid
+          background: $accent2
           transform: scale(1.05)
 
           & > *
-            background: $mid
+            background: $accent2
             transform: scale(1.05)
 
   .socialsub
     border: 0px
     padding: 2px
-    border: 0px solid $white
+    border: 0px solid $black
 
     &:hover
-      background: $mid
+      background: $accent2
 
     tr
       padding: 2px
@@ -55,8 +56,8 @@ $white: #FFF
         cursor: grab
 
         &:hover
-          background: $light
+          background: $accent2
           transform: scale(1.2)
 
           & > *
-            background: $light
+            background: $accent2

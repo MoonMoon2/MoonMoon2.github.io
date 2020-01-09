@@ -1,4 +1,82 @@
 ---
 # Leave this - it makes the damn thing work
 ---
+
+// colors
+$black: #000000
+$accent1: #FF7F50
+$accent2: #B57EDC
+$white: #FFFFFF
+$gray: #AAAAAA
+$lgray: #EDEDED
+
 // Page styles
+
+
+#std
+    display: flex
+    padding: 20px
+    padding-left: 0px
+
+    #trumpp
+        background-image: url(../assets/img/trump.jpg)
+        width: 598px
+        height: 449px
+        z-index: 1
+
+    #trump
+        width: 598px
+        height: 449px
+        display: flex
+        h2
+            color: $white
+            padding-top: 10px
+            padding-left: 160px
+            font-size: 20px
+            line-height: 20px
+            writing-mode: vertical-rl
+            text-orientation: upright
+            text-shadow: 0 0 10px $black
+            z-index: 3
+        h4
+            color: $white
+            padding-top: 148px
+            font-size: 20px
+            line-height: 20px
+            text-shadow: 0 0 10px $black
+            z-index: 2
+            position: absolute
+            left: 192.5px
+        h5
+            color: $white
+            padding-top: 190px
+            font-size: 6px
+            line-height: 6px
+            text-shadow: 0 0 10px $black
+            z-index: 2
+            position: absolute
+            left: 230px
+        h6
+            color: $white
+            padding-top: 360px
+            font-size: 20px
+            line-height: 20px
+            border-radius: 50%
+            z-index: 2
+            position: absolute
+            left: 248px
+            text-shadow: 2px 2px 8px $black
+            strong
+                font-size: 25px
+        h3
+            color: $white
+            top: 10px
+            padding-top: 160px
+            padding-left: 150px
+            font-size: 20px
+            line-height: 20px
+            text-orientation: upright
+            text-shadow: 0 0 10px $black
+            strong
+                &:last-of-type
+                    text-decoration: line-through
