@@ -49,15 +49,17 @@ html, body
   top: 116px
   height: 20px
   float: left
-  display: block
+  display: flex
+  flex-direction: row
 
 .alive
-  width: 4.5%
+  flex: auto
   height: 40px
   float: left
   border-right: 1px solid #000
   border-bottom: 1px solid #000
   text-align: center
+  padding-top: 5px
 
 .character .dead
   background-color: #333
@@ -117,25 +119,21 @@ html, body
   position: fixed
   bottom: 5px
   right: 5px
-  height: 35%
-  width: 20%
+  height: calc(100% - 190px)
+  width: 30%
   display: table
+
+  iframe
+      height: 90%
+      width: 100%
+      padding-bottom: 10px
 
 .ccolor
   height: 30px
-  width: 10%
+  width: 5%
   text-align: center
   display: table-cell
   vertical-align: middle
-
-audio
-  position: fixed
-  left: 5px
-  bottom: 5px
-  width: 80%
-
-iframe
-  border: 1px solid black
 
 .filler
   height: 1000px

@@ -10,98 +10,17 @@ function onLoad() {
 
 function cShow(arg) {
     var i;
-    for (i = 0; i < 21; i++) {
+    arg -= 1
+    console.log(arg)
+    for (i = 0; i < 8; i++) {
         ctab[i].setAttribute("hidden", "true");
-        ctab[i].removeAttribute("style")
+        ctab[i].removeAttribute("style");
     }
-    cfill[0].setAttribute("hidden", "true")
-    switch (arg) {
-        case 1:
-            ctab[0].removeAttribute("hidden")
-            ctab[0].setAttribute("style", "display:table-cell;")
-            break
-        case 2:
-            ctab[1].removeAttribute("hidden")
-            ctab[1].setAttribute("style", "display:table-cell;")
-            break
-        case 3:
-            ctab[2].removeAttribute("hidden")
-            ctab[2].setAttribute("style", "display:table-cell;")
-            break
-        case 4:
-            ctab[3].removeAttribute("hidden")
-            ctab[3].setAttribute("style", "display:table-cell;")
-            break
-        case 5:
-            ctab[4].removeAttribute("hidden")
-            ctab[4].setAttribute("style", "display:table-cell;")
-            break
-        case 6:
-            ctab[5].removeAttribute("hidden")
-            ctab[5].setAttribute("style", "display:table-cell;")
-            break
-        case 7:
-            ctab[6].removeAttribute("hidden")
-            ctab[6].setAttribute("style", "display:table-cell;")
-            break
-        case 8:
-            ctab[7].removeAttribute("hidden")
-            ctab[7].setAttribute("style", "display:table-cell;")
-            break
-        case 9:
-            ctab[8].removeAttribute("hidden")
-            ctab[8].setAttribute("style", "display:table-cell;")
-            break
-        case 10:
-            ctab[9].removeAttribute("hidden")
-            ctab[9].setAttribute("style", "display:table-cell;")
-            break
-        case 11:
-            ctab[10].removeAttribute("hidden")
-            ctab[10].setAttribute("style", "display:table-cell;")
-            break
-        case 12:
-            ctab[11].removeAttribute("hidden")
-            ctab[11].setAttribute("style", "display:table-cell;")
-            break
-        case 13:
-            ctab[12].removeAttribute("hidden")
-            ctab[12].setAttribute("style", "display:table-cell;")
-            break
-        case 14:
-            ctab[13].removeAttribute("hidden")
-            ctab[13].setAttribute("style", "display:table-cell;")
-            break
-        case 15:
-            ctab[14].removeAttribute("hidden")
-            ctab[14].setAttribute("style", "display:table-cell;")
-            break
-        case 16:
-            ctab[15].removeAttribute("hidden")
-            ctab[15].setAttribute("style", "display:table-cell;")
-            break
-        case 17:
-            ctab[16].removeAttribute("hidden")
-            ctab[16].setAttribute("style", "display:table-cell;")
-            break
-        case 18:
-            ctab[17].removeAttribute("hidden")
-            ctab[17].setAttribute("style", "display:table-cell;")
-            break
-        case 19:
-            ctab[18].removeAttribute("hidden")
-            ctab[18].setAttribute("style", "display:table-cell;")
-            break
-        case 20:
-            ctab[19].removeAttribute("hidden")
-            ctab[19].setAttribute("style", "display:table-cell;")
-            break
-        case 21:
-            ctab[20].removeAttribute("hidden")
-            ctab[20].setAttribute("style", "display:table-cell;")
-            break
-    }
+    cfill[0].setAttribute("hidden", "true");
+    ctab[arg].removeAttribute("hidden");
+    ctab[arg].setAttribute("style", "display:table-cell;");
 }
+
 // Scrolling tracking
 // Consider adding some kind of custom scroll progress tracking bar
 window.onscroll = function() {
@@ -109,7 +28,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    
+
 }
 // Example from another page on this site
 /*
