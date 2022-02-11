@@ -4,18 +4,11 @@
 {% include head.html %}
 
 <body onload='onLoad()'>
-    <header>
-        {% include header.html %}
-    </header>
-    <div id='padding-top'></div>
-    <div class="parallax" style="background-image: url(../assets/img/img2.jpg)">
-        <div id='main'>
-            <h1>MoonMoon2</h1>
-            <p>Welcome to my site, have a look around. Email me on my contact page if you have any cool ideas while you're here!</p>
-        </div>
-    </div>
+
+    {% include header.html %}
+
     {{ content }}
-    <div class="parallax" style= "background-image: url(../assets/img/img2.jpg);height:300px;"></div>
+
     {% include footer.html %}
 </body>
 

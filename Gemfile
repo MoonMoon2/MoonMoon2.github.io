@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby 2.6
+ruby RUBY_VERSION
 
 gem 'github-pages', group: :jekyll_plugins
 gem 'octopress-autoprefixer'
+
+gem "webrick", "~> 1.7"

@@ -2,219 +2,45 @@
 # No touch, make work
 ---
 // colors
-$black: #000000
-$accent1: #FF7F50
-$accent2: #B57EDC
+$primary: #212121
+$accent1: #7b1fa2
+$accent2: #477600
 $white: #FFFFFF
-$gray: #AAAAAA
-$lgray: #EDEDED
+$darkwhite: #c7c3c3
+$light: #484848
+$dark: #000000
 
-
-// creating mobile functionality
-@mixin mobile
-    @media screen and (max-width:600px)
-        @content
-
-.active
-    background-color: $gray
-    color: $black
-// styles
-.menu
-    background: $white
-    height: 4rem
-
-    ol
-        list-style-type: none
-        margin: 0 auto
-        padding: 0
-    > ol
-        max-width: 1000px
-        padding: 0 2rem
-        display: flex
-        flex-direction: row
-        justify-content: flex-end
-
-        > .menu-item
-            flex: 1
-            padding: 0.75rem 0
-
-            &:after
-                content: ''
-                position: absolute
-                width: 4px
-                height: 4px
-                border-radius: 100%
-                bottom: 5px
-                left: calc(50% - 2px)
-                background: $accent1
-                will-change: transform
-                transform: scale(0)
-                transition: transform 0.2s ease
-
-            &:hover:after
-                transform: scale(1)
-
-    &-item
-        position: relative
-        line-height: 2.5rem
-        text-align: center
-
-        a
-            overflow: hidden
-            white-space: nowrap
-            text-overflow: ellipsis
-            display: block
-            color: $black
-
-        @at-root .sub-menu &
-            padding: 0.75rem 0
-            background: $white
-            opacity: 0
-            transform-origin: bottom
-            animation: enter 0.2s ease forwards
-            border: 0.2px solid rgba($accent2, 0.15)
-
-            @for $n from 1 through 3
-                &:nth-child(#{$n})
-                    animation-duration: 0.2s + 0.1s * ($n - 1)
-                    animation-delay: 0.1s * ($n - 1)
-            &:first-child
-                border-style: solid solid none solid !important
-            &:nth-child(2)
-                border-style: none solid none solid
-            &:last-child
-                border-style: none solid solid solid !important
-
-            &:hover
-                background-color: $gray
-
-            a
-                padding: 0 0.75rem
-
-            @include mobile
-                background-color: $lgray
-
-    @include mobile
-        position: relative
-
-        &:after
-            content: ''
-            position: absolute
-            top: calc(50% - 2px)
-            right: 1rem
-            width: 30px
-            height: 4px
-            background: $white
-            box-shadow: 0 10px $gray, 0 -10px $gray
-
-        > ol
-            display: none
-            background: $white
-            flex-direction: column
-            justify-content: center
-            height: 100vh
-            animation: fade 0.2s ease-out
-
-            > .menu-item
-                flex: 0
-                opacity: 0
-                animation: enter 0.3s ease-out forwards
-
-                @for $n from 1 through 5
-                    &:nth-child(#{$n})
-                        animation-delay: 0.1s * ($n - 1)
-
-                & + .menu-item
-                    margin-top: 0.75rem
-
-                &:after
-                    left: auto
-                    right: 1rem
-                    bottom: calc(50% - 2px)
-
-                &:hover
-                    z-index: 1
-
-        &:hover
-            > ol
-                display: flex
-
-            &:after
-                box-shadow: none
-
-.sub-menu
-    position: absolute
-    width: 100%
-    top: 100%
-    left: 0
-    display: none
-    z-index: 1
-    transition: background-color 0.5s ease
-
-    @at-root .menu-item:hover > &
-        display: block
-
-    @include mobile
-        width: 100vw
-        left: -2rem
-        top: 50%
-        transform: translateY(-50%)
-
-html,body
-    background-color: $white
-    color: $black
-
-#padding-top
-    padding-top: 20px
-    width: 100%
-#title
-    height: 20vh
-    line-height: 20vh
-    text-align: center
-
-.content
-    padding-left: 20px
-    padding-right: 20px
+@font-face
+    font-family: 'rubik'
+    src: url('../assets/font/rubik/Rubik-VariableFont_wght.ttf')
+    font-style: normal
+@font-face
+    font-family: 'rubik'
+    src: url('../assets/font/rubik/Rubik-Italic-VariableFont_wght.ttf')
+    font-style: italic
 *
     box-sizing: border-box
-    transition: background-color 0.2s ease
-    text-align: center
-
-    &:before, &:after
-        box-sizing: inherit
-
+    margin: 0
+    padding: 0
+    font-family: 'rubik', serif
+    font-synthesis: none
 a
     text-decoration: none
-.parallax
-    // parallax
-    background-attachment: fixed
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
-
-#main
-    padding-top: 10vh
-    display: flex
-    flex-direction: column
+    color: inherit
+body
+    background-color: $primary
     color: $white
+    font-size: 2vw
+    padding-top: 2%
+    padding-left: 2%
+header
 
-    text-decoration: none
-    h1
-        font-size: 4rem
-        text-shadow: 0 0 6px $black
+footer
+    font-style: italic
+    width: 99%
+    position: fixed
+    bottom: 0
     p
-        text-shadow: 0 0 3px $black
-    
-@keyframes enter
-    from
-        opacity: 0
-        transform: scaleY(0.98) translateY(10px)
-    to
-        opacity: 1
-        transform: none
-
-@keyframes fade
-    from
-        opacity: 0
-    to
-        opacity: 1
+        font-variation-settings: 'wght' 300
+        font-size: 1vh
+        color: $darkwhite
