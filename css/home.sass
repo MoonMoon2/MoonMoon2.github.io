@@ -1,25 +1,54 @@
 ---
 # Leave this - it makes the damn thing work
 ---
-
 // colors
 $primary: #212121
-$accent1: #2f0076
-$accent2: #477600
-$white: #FFFFFF
-$light: #484848
-$dark: #000000
+$laccent: #8e6075
+$daccent: #4D0266
+$lshade: #dededd
+$dshade: #1D131F
+
 
 header
     visibility: hidden
-.row
-    img
-        height: 8vh
-        border-radius: 100%
-    h1
-        font-variation-settings: 'wght' 750
-        font-size: 8vh
-        display: inline-block
-
-p
-    width: 50%
+.profile
+    width: 35%
+    justify-content: center
+    text-align: center
+    height: 100%
+    position: fixed
+    background-image: linear-gradient(to right, transparent, $primary), url(../assets/img/img7.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    top: 0%
+    left: 0%
+    padding: 10% 2%
+    padding-right: 10%
+    .intro
+        background-color: rgba(142, 96, 117, 0.3)
+        padding: 5% 2% 1%
+        border-radius: 10px
+        filter: drop-shadow(0, 0, 30px, $dshade)
+        img
+            height: 15vh
+            border-radius: 100%
+        h1
+            font-variation-settings: 'wght' 750
+            font-size: 5vh
+    .socials
+        bottom: 2%
+        position: fixed
+        img
+            transition: transform 0.7s ease-in-out
+            width: 30px
+        .ln:hover
+                transform: rotate(360deg)
+                content: url(../assets/img/ln2.png)
+        .git:hover
+                transform: rotate(360deg)
+                content: url(../assets/img/git2.png)
+.page
+    padding-left: 40%
+    padding-top: 5%
+    right: 0%
