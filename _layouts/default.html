@@ -3,12 +3,13 @@
 
 {% include head.html %}
 
-<body onload='onLoad()'>
+<body onload='loaded()'>
 
     {% include header.html %}
-
-    {{ content }}
-
+    <content>
+        <div></div>
+        {{ content }}
+    </content>
     {% include footer.html %}
 </body>
 

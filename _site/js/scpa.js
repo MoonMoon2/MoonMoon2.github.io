@@ -16,21 +16,20 @@ function getCookie(name) {
     }
 }
 
-function onLoad() {
+function loaded() {
     try {
-    var p = getCookie('prevclout')
-    var p = p.split('|')
-    console.log('-1: '+ p)
-    for (i = 0; i < p.length; i++) {
-        var pclout = document.createElement('p')
-        console.log('0: '+ p)
-        var t = document.createTextNode(p[i]);
-        pclout.appendChild(t);
-        document.getElementById("pastclout").appendChild(pclout)
-    }
-} catch (TypeError){
+        var p = getCookie('prevclout')
+        var p = p.slice(1)
+        var p = p.split('|')
+        for (i = 0; i < p.length; i++) {
+            var pclout = document.createElement('li')
+            var t = document.createTextNode(p[i]);
+            pclout.appendChild(t);
+            document.getElementById("pastclout").insertBefore(pclout, document.getElementById("pastclout").firstChild)
+        }
+    } catch (TypeError){
 
-}
+    }
 
 }
 
@@ -76,22 +75,17 @@ function cloutify() {
     document.getElementById("ctext").value = ntext
 
     var t = getCookie('prevclout')
-    console.log('1: ' + t)
     try {
-    var t = t.split('|')
-} catch (TypeError){
-    var t = new Array()
-}
-    console.log('2: ' + t)
-    console.log(ntext)
+        var t = t.split('|')
+    } catch (TypeError){
+        var t = new Array()
+    }
     t.push(ntext)
-    console.log('3: ' + t)
-    var pclout = document.createElement('p')
+    var pclout = document.createElement('li')
     var c = document.createTextNode(ntext);
     pclout.appendChild(c);
-    document.getElementById("pastclout").appendChild(pclout)
+    document.getElementById("pastclout").insertBefore(pclout, document.getElementById("pastclout").firstChild)
     var t = t.join('|')
     var t = t.replace('=', '')
-    console.log('4: ' + t)
     setCookie('prevclout', t, '365')
 }

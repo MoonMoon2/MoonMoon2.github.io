@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111130391-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111130391-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Catenary - Tate's Site</title>
+    
+    
+    <link rel="stylesheet" href="/css/catenary.css">
+    
+    
+    
+    
+    <script src="/js/catenary.js"></script>
+    
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+
+<body onload='loaded()'>
+
+    <header>
+    <img src="assets/img/img8.png" \>
+    <a href="/"><h1>Tobias Ward</h1></a>
+    <nav>
+    </nav>
+</header>
+
+    <content>
+        <div></div>
+        <h1>Catenary Curve</h1>
+<p>
+    Catenary curves represent the shape formed by a chain of uniform density
+    hanging from two end points. The equation is as follows:
+</p>
+
+\[y = a\cosh{\frac{x}{a}}\]
+
+<p>
+    Where a is defined as \(a = \frac{T_0}{\mu g}\). \(T_0\) is the tension at
+    the bottom of the catenary, \(\mu\) is the linear density, and \(g\) is the
+    acceleration due to gravity.
+</p>
+<p>
+    But this is quite annoying. How am I supposed to know the precise tension at
+    the bottom of the chain? That's what this web-applet is for. You provide
+    end-points for the chain, a length for the chain, and a linear density, and
+    I'll return the equation of the chain, including that pesky tension.
+</p>
+<div class="input">
+    <div>
+
+</div>
+
+    </content>
+    <footer>
+
+</footer>
+
+</body>
+
+</html>
