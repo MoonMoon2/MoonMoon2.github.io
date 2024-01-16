@@ -4,5 +4,6 @@ const promptList = [
 ];
 
 function loadPrompt() {
-    document.getElementById("prompt").innerHTML = promptList[Math.floor(Math.random * promptList.length)]
+    const promptNum = Math.floor(Math.random * promptList.length);
+    document.getElementById("prompt").innerHTML = promptList[promptNum];
 }
