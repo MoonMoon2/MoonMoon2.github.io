@@ -1,7 +1,7 @@
 // Declare main variables //
-var ctab = document.getElementsByClassName('ctab')
-var cfill = document.getElementsByClassName('ctabf')
-var audio = document.getElementsByClassName("audio");
+let ctab = document.getElementsByClassName('ctab')
+let cfill = document.getElementsByClassName('ctabf')
+let audio = document.getElementsByClassName("audio");
 
 function onLoad() {
     console.log('onload')
@@ -9,10 +9,9 @@ function onLoad() {
 
 
 function cShow(arg) {
-    var i;
     arg -= 1
     console.log(arg)
-    for (i = 0; i < 8; i++) {
+    for (let i = 0; i < 8; i++) {
         ctab[i].setAttribute("hidden", "true");
         ctab[i].removeAttribute("style");
     }
@@ -21,35 +20,8 @@ function cShow(arg) {
     ctab[arg].setAttribute("style", "display:table-cell;");
 }
 
-// Scrolling tracking
-// Consider adding some kind of custom scroll progress tracking bar
-window.onscroll = function() {
-    scrollFunction()
-};
 
-function scrollFunction() {
 
-}
-// Example from another page on this site
-/*
-function myFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").className = "hidden";
-        document.getElementById("sitehead").className = "hidden";
-        document.getElementById("social").className = "hiddensocial";
-        document.getElementById("sitetitle").className = "hidden";
-        document.getElementById("myphead").className = "movedmyp";
-        document.getElementById("wip").className = "movedwip";
-    } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
-        document.getElementById("header").removeAttribute("class");
-        document.getElementById("sitehead").removeAttribute("class");
-        document.getElementById("social").removeAttribute("class");
-        document.getElementById("sitetitle").removeAttribute("class");
-        document.getElementById("myphead").removeAttribute("class");
-        document.getElementById("wip").removeAttribute("class");
-    }
-}
-*/
 
 
 
