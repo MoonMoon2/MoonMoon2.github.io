@@ -18,7 +18,11 @@ exclude:
     - package.json
     - CODE_OF_CONDUCT.md
     - .gitignore
+    - .vscode
 include:
     - _pages
 plugins:
     - octopress-autoprefixer
+
+exiftag:
+
