@@ -6,6 +6,3 @@ const promptList = [
 function loadPrompt() {
     document.getElementById("prompt").innerHTML = promptList[Math.floor(Math.random * promptList.length)]
 }
-
-
-document.getElementById("newPromptBtn").onclick = loadPrompt();
