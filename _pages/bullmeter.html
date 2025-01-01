@@ -1,0 +1,115 @@
+---
+layout: default
+permalink: /bullmeter
+title: Bull Meter
+stylesheets:
+scripts:
+---
+
+<div class='content'>
+    <h1>Who is the bull-est?</h1>
+    <img src="../assets/img/bull.jpg" style="width: 100%;" alt="This would be a really nice bull if you were not lame"
+        \>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!--Line below added, added date adapter for time scale -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+        <div style="width: 100%"><canvas id="bullchart"></canvas></div>
+
+        <script>
+
+
+            const time_values = [1];
+            const kieran = [0];
+            const jake = [0];
+            const ryan = [0];
+            const lily = [0];
+            const tate = [0];
+            const eli = [0];
+            const frank = [0];
+
+            const kieran_color = "#1a2c4a"
+            const jake_color = "#FF0000";
+            const ryan_color = "#512c7a";
+            const lily_color = "#593001";
+            const tate_color = "#a49449";
+            const eli_color = "#593001";
+            const frank_color = "#593001";
+
+            new Chart("Bull Donations",
+                document.getElementById("bullchart"),
+                {
+                    type: "line",
+                    data: {
+                        labels: time_values,
+                        datasets: [
+                            {
+                                label: "Stain",
+                                backgroundColor: kieran_color,
+                                borderColor: kieran_color,
+                                data: kieran
+                            },
+                            {
+                                label: "Ezig",
+                                backgroundColor: jake_color,
+                                borderColor: jake_color,
+                                data: jake
+                            },
+                            {   
+                                label: "Holamu",
+                                backgroundColor: ryan_color,
+                                borderColor: ryan_color,
+                                data: ryan
+                            },
+                            {
+                                label: "Kai",
+                                backgroundColor: lily_color,
+                                borderColor: lily_color,
+                                data: lily
+                            },
+                            {
+                                label: "Eisenschild",
+                                backgroundColor: tate_color,
+                                borderColor: tate_color,
+                                data: tate
+                            },
+                            {
+                                label: "Big Boss",
+                                backgroundColor: eli_color,
+                                borderColor: eli_color,
+                                data: eli
+                            },
+                            {
+                                label: "Tau",
+                                backgroundColor: frank_color,
+                                borderColor: frank_color,
+                                data: frank
+                            },
+
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            title: {
+                                display: true,
+                                text: ''
+                            }
+                        },
+                        scales: {
+                            weeks: {
+                                title: "Weeks of 2025"
+                            }
+                        }
+                    }
+                });
+        </script>
+    </div>
+
+</div>
